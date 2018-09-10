@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router";
 import "./assets/css/app.css";
 import Home from './components/Home';
 import Home1 from './components/Home.1';
-import './server/index';
 
 class App extends React.Component {
   public render() {
