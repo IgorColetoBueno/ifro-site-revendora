@@ -1,0 +1,15 @@
+.flex-container{
+    display: flex;
+}
+
+.flex-d-row{
+    flex-direction: row
+}
+
+.flex-d-col{
+    flex-direction: column
+}
+
+.ta-center{
+    text-align: center;
+}
