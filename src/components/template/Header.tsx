@@ -26,7 +26,7 @@ export default class IHeader extends React.Component<
       <div>
         <header>
           <nav className="navbar-nav navbar-light flex-container flex-d-row">
-              <span className="navbar-title">{this.state.title}</span>
+            <span className="navbar-title">{this.state.title}</span>
             <ul className="flex-container flex-d-row">
               <li className="navbar-item">Quem somos</li>
               <li className="navbar-item">Meus produtos</li>

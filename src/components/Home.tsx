@@ -9,8 +9,11 @@ export default class Home extends React.Component<{}> {
         <Header />
         <main>
           <section id="section-apresentacao">
-            <div className="imagem-apresentacao" />
-            <span id="titulo-apresentacao">A beleza nunca foi tão natural</span>
+            <div className="apresentacao">
+              <span id="titulo-apresentacao">
+                Sua beleza nunca foi tão natural!
+              </span>
+            </div>
           </section>
         </main>
         <Footer />

@@ -2,3 +2,9 @@ footer{
     bottom: 0;
     position: fixed;
 }
+
+#nav-footer{
+    background: linear-gradient(to top, black, black, black) ;
+    display: block;
+    width: 100%;
+}
