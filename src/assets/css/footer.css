@@ -1,35 +1,23 @@
 footer{
     bottom: 0;
-    position: fixed;
+}
+
+.footer-icon-light{
+    background: whitesmoke;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 6px; 
+}
+
+.footer-icon-dark{
+    background: black;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 6px;
 }
 
 #nav-footer{
     background: linear-gradient(to top, black, black, black) ;
     display: block;
     width: 100%;
-}
-
-#freepik{
-    background: whitesmoke !important;
-}
-
-#facebook-icon{
-    background-image: url("../img/facebook.png");
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-}
-
-#twitter-icon{
-    background-image: url("../img/twitter.png");
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-}
-
-#instagram-icon{
-    background-image: url("../img/instagram.png");
-    display: inline-block;
-    width: 32px;
-    height: 32px;
 }

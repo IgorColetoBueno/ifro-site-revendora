@@ -1,6 +1,6 @@
 .navbar-nav{
     padding: 7px;
-    background: linear-gradient(to top, #9b1827e5, #9b1827, #9b1827e5) ;
+    background: linear-gradient(to top, #9b1827ea, #9b1827, #9b1827ea) ;
 }
 
 .navbar-light{
@@ -18,5 +18,10 @@
 .navbar-title{
     font-family: 'Roboto' sans-serif;
     font-size: 24px;
+    margin: auto 0;
+}
+
+#siga-nos{
+    color: whitesmoke;
     margin: auto 0;
 }

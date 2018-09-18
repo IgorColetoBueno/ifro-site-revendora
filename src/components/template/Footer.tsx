@@ -1,4 +1,7 @@
 import * as React from "react";
+import logoFacebook from "../../assets/img/facebook-logo.svg";
+import logoInstagram from "../../assets/img/instagram-logo.svg";
+import logoTwitter from "../../assets/img/twitter-logo.svg";
 
 export default class Footer extends React.Component<{}> {
   public render() {
@@ -6,41 +9,42 @@ export default class Footer extends React.Component<{}> {
       <footer id="nav-footer">
         <nav>
           <ul className="flex-container flex-d-row">
+            <li id="siga-nos">Siga-nos nas redes sociais :p</li>
             <li>
-              <a className="navbar-light navbar-item" href="https://www.facebook.com">
-                <i id="facebook-icon">&nbsp;</i>
+              <a>
+                <img
+                  className="footer-icon-light"
+                  width="32"
+                  height="32"
+                  src={logoFacebook}
+                  alt="Ícone do facebook"
+                />
               </a>
             </li>
             <li>
-              <a className="navbar-light navbar-item" href="https://www.twitter.com">
-                <i id="twitter-icon">&nbsp;</i>
+              <a>
+                <img
+                  className="footer-icon-light"
+                  width="32"
+                  height="32"
+                  src={logoTwitter}
+                  alt="Ícone do twitter"
+                />
               </a>
             </li>
             <li>
-              <a className="navbar-light navbar-item" href="https://www.instagram.com">
-                <i id="instagram-icon">&nbsp;</i>
+              <a>
+                <img
+                  className="footer-icon-dark"
+                  width="32"
+                  height="32"
+                  src={logoInstagram}
+                  alt="Ícone do instagram"
+                />
               </a>
             </li>
           </ul>
         </nav>
-        <div id="freepik">
-          Icons made by{" "}
-          <a href="http://www.freepik.com" title="Freepik">
-            Freepik
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>{" "}
-          is licensed by{" "}
-          <a
-            href="http://creativecommons.org/licenses/by/3.0/"
-            title="Creative Commons BY 3.0"
-            target="_blank"
-          >
-            CC 3.0 BY
-          </a>
-        </div>
       </footer>
     );
   }
