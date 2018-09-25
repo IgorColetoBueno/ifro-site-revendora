@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
+import toggleIcon from "../../assets/img/menu.svg";
 
 export interface IHeaderProps {
   title?: string;
@@ -6,6 +8,7 @@ export interface IHeaderProps {
 
 export interface IHeaderState {
   title?: string;
+  toggle: boolean;
 }
 
 export default class IHeader extends React.Component<
@@ -15,26 +18,64 @@ export default class IHeader extends React.Component<
   constructor(props: IHeaderProps) {
     super(props);
 
+    this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
       title:
-        this.props.title !== undefined ? this.props.title : "Minha revendedora"
+        this.props.title !== undefined ? this.props.title : "Minha revendedora",
+      toggle: false
     };
+  }
+
+  public toggleNavbar() {
+    this.setState({ ...this.state, toggle: !this.state.toggle });
   }
 
   public render() {
     return (
-      <div>
-        <header>
-          <nav className="navbar-nav navbar-light flex-container flex-d-row">
-            <span className="navbar-title">{this.state.title}</span>
-            <ul className="flex-container flex-d-row">
-              <li className="navbar-item">Quem somos</li>
-              <li className="navbar-item">Meus produtos</li>
-              <li className="navbar-item">Contato</li>
+      <header>
+        <div className="navbar-nav nav-flex-container">
+          <div className="navbar-light">
+            <img
+              id="btn-toggle"
+              onClick={this.toggleNavbar}
+              src={toggleIcon}
+              alt="Ícone da barra de navegação"
+            />
+            <span className="navbar-title">
+              <Link to="/" className="navbar-item">
+                {this.state.title}
+              </Link>
+            </span>
+          </div>
+
+          <nav
+            className={`navbar-aria-toggle navbar-light ${
+              this.state.toggle ? "toggle-enabled" : "toggle-disabled"
+            }`}
+          >
+            <ul
+              id="lista-elementos-nav"
+              className="nav-flex-container items-center"
+            >
+              <li>
+                <Link to="/QuemSomos" className="navbar-item">
+                  Quem somos
+                </Link>
+              </li>
+              <li>
+                <Link to="/MeusProdutos" className="navbar-item">
+                  Meus Produtos
+                </Link>
+              </li>
+              <li>
+                <Link to="/Contato" className="navbar-item">
+                  Contato
+                </Link>
+              </li>
             </ul>
           </nav>
-        </header>
-      </div>
+        </div>
+      </header>
     );
   }
 }

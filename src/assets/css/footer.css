@@ -1,6 +1,4 @@
-footer{
-    bottom: 0;
-}
+
 
 .footer-icon-light{
     background: whitesmoke;
@@ -17,7 +15,12 @@ footer{
 }
 
 #nav-footer{
-    background: linear-gradient(to top, black, black, black) ;
-    display: block;
+    background: linear-gradient(to top, #000000f8, black, #000000f8) ;
     width: 100%;
+    bottom: 0;
+    height: 60px;    
+}
+
+#nav-social{
+    padding-top: 12px;
 }

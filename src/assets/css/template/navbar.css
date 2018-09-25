@@ -1,27 +1,81 @@
-.navbar-nav{
+.navbar-nav {
     padding: 7px;
-    background: linear-gradient(to top, #9b1827ea, #9b1827, #9b1827ea) ;
+    background: #9b1827;
 }
 
-.navbar-light{
+.nav-flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.navbar-light {
     color: ghostwhite;
 }
 
-.navbar-light:hover{
+.navbar-item:hover {
     color: silver;
 }
 
-.navbar-item{
+.navbar-item {
+    color: whitesmoke;
     padding-right: 15px;
 }
 
-.navbar-title{
-    font-family: 'Roboto' sans-serif;
+.navbar-title {
+    font-family: 'Roboto'sans-serif;
     font-size: 24px;
     margin: auto 0;
 }
 
-#siga-nos{
+#siga-nos {
     color: whitesmoke;
-    margin: auto 0;
+    margin: auto 0 12px 12px;
+}
+
+#btn-toggle {
+    display: none;
+    margin-right: 6px;
+}
+
+#lista-elementos-nav {
+    margin-left: 25px;
+    margin-top: 6px;
+}
+
+@media only screen and (max-width:600px) {
+    .nav-flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btn-toggle {
+        display: unset;
+    }
+
+    .toggle-enabled {
+        display: block;
+    }   
+
+    .toggle-disabled {
+        display: none;
+    }
+
+    .navbar-item {
+        padding-top: 5px;
+        padding-bottom: 12px;
+    }
+
+    #lista-elementos-nav {
+        margin-top: 3px;
+    }
+
+    #lista-elementos-nav > li{
+        font-size: 18px; 
+        margin-top: 10px;
+        margin-bottom: 5px; 
+    }
 }

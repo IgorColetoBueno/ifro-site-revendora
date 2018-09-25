@@ -14,10 +14,10 @@ export default class Home extends React.Component<{}> {
       <div>
         <Header />
         <main>
-          <section id="section-apresentacao">
+          <section id="home-apresentacao" className="section-apresentacao">
             <div className="apresentacao">
-              <span id="titulo-apresentacao">
-                <h1>Sua beleza nunca foi tão natural!</h1>
+              <span className="titulo-apresentacao">
+                <h1 className="big">Sua beleza nunca foi tão natural!</h1>
               </span>
             </div>
           </section>
@@ -26,33 +26,31 @@ export default class Home extends React.Component<{}> {
               <h2>Qual é a importância da beleza?</h2>
             </div>
             <img
-              width="640"
-              height="640"
               className="carrossel-home-item"
               src={carrosselItem1}
-              alt=""
+              alt="Buquê de flores junto a cosméticos em um fundo rosa"
             />
             <img
-              width="640"
-              height="420"
               className="carrossel-home-item"
               src={carrosselItem2}
-              alt=""
+              alt="Imagens de batons e maquiagens sobre um fundo branco"
             />
             <img
-              width="640"
-              height="420"
               className="carrossel-home-item"
               src={carrosselItem3}
-              alt=""
+              alt="Estojo de maquiagens"
             />
             <img
-              width="640"
-              height="420"
               className="carrossel-home-item"
               src={carrosselItem4}
-              alt=""
+              alt="Imagem de um batom sobre a mesa"
             />
+          </section>
+          <section className="paragrafo-descricao">
+            <p>
+              A beleza é uma força que nasce dentro de você, é sua autoconfiança
+              em harmonia com seu jeito de ver o mundo!
+            </p>
           </section>
         </main>
         <Footer />

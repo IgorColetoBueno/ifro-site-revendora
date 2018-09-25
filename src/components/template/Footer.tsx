@@ -7,7 +7,7 @@ export default class Footer extends React.Component<{}> {
   public render() {
     return (
       <footer id="nav-footer">
-        <nav>
+        <nav id="nav-social">
           <ul className="flex-container flex-d-row">
             <li id="siga-nos">Siga-nos nas redes sociais :p</li>
             <li>
