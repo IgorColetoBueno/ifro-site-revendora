@@ -49,19 +49,28 @@ section#home-apresentacao>div.apresentacao {
 }
 
 /* Início do carrossel */
+
+#section-home-carrossel{
+    height: 100%;
+    background: url("../img/fundo-section-home.jpeg") center no-repeat;
+}
+
 .carrossel-home {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
     width: 640px;
     height: 420px;
     position: relative;
     overflow: hidden;
 }
 
+.carrossel-home-titulo>h2{
+    text-shadow: 2px 0px 5px rgb(230, 226, 226);
+}
+
 .paragrafo-descricao {
-    margin: 0 auto 15px;
+    text-shadow: 1px 1px 3px #fff;
+    margin: 10px auto;
     text-align: justify;
     width: 640px;
 }
@@ -72,6 +81,7 @@ section#home-apresentacao>div.apresentacao {
 }
 
 .carrossel-home-item {
+    box-shadow: 3px 1px 2px #000;
     position: absolute;
     opacity: 0;
     animation-name: animacao;

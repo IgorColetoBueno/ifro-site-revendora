@@ -21,36 +21,39 @@ export default class Home extends React.Component<{}> {
               </span>
             </div>
           </section>
-          <section className="carrossel-home">
-            <div className="carrossel-home-titulo">
-              <h2>Qual é a importância da beleza?</h2>
+          <section id="section-home-carrossel">
+            <div className="carrossel-home">
+              <div className="carrossel-home-titulo">
+                <h2>Qual é a importância da beleza?</h2>
+              </div>
+              <img
+                className="carrossel-home-item"
+                src={carrosselItem1}
+                alt="Buquê de flores junto a cosméticos em um fundo rosa"
+              />
+              <img
+                className="carrossel-home-item"
+                src={carrosselItem2}
+                alt="Imagens de batons e maquiagens sobre um fundo branco"
+              />
+              <img
+                className="carrossel-home-item"
+                src={carrosselItem3}
+                alt="Estojo de maquiagens"
+              />
+              <img
+                className="carrossel-home-item"
+                src={carrosselItem4}
+                alt="Imagem de um batom sobre a mesa"
+              />
             </div>
-            <img
-              className="carrossel-home-item"
-              src={carrosselItem1}
-              alt="Buquê de flores junto a cosméticos em um fundo rosa"
-            />
-            <img
-              className="carrossel-home-item"
-              src={carrosselItem2}
-              alt="Imagens de batons e maquiagens sobre um fundo branco"
-            />
-            <img
-              className="carrossel-home-item"
-              src={carrosselItem3}
-              alt="Estojo de maquiagens"
-            />
-            <img
-              className="carrossel-home-item"
-              src={carrosselItem4}
-              alt="Imagem de um batom sobre a mesa"
-            />
-          </section>
-          <section className="paragrafo-descricao">
-            <p>
-              A beleza é uma força que nasce dentro de você, é sua autoconfiança
-              em harmonia com seu jeito de ver o mundo!
-            </p>
+            <div className="paragrafo-descricao">
+              <p>
+                A beleza é uma força que nasce dentro de você, é sua autoconfiança
+                em harmonia com seu jeito de ver o mundo!
+                Viva sua beleza e compartilhe-a conosco!
+              </p>
+            </div>
           </section>
         </main>
         <Footer />
