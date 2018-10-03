@@ -1,5 +1,8 @@
-#imagem-quem-somos{
-    content: url("../img/quem-somos.jpeg");
+@media only screen and (max-width:640) {
+    #imagem-quem-somos {
+        width: 320px;
+        height: 420px;
+    }
 }
 
 section#quem-somos-apresentacao>div.apresentacao {
@@ -11,6 +14,17 @@ section#quem-somos-apresentacao>div.apresentacao {
 section#quem-somos-banner {
     padding: 20px;
     text-align: center;
+    background: url("../img/fundo-section-home-1.jpeg") center no-repeat fixed;
+}
+
+section#quem-somos-banner>h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    padding: 5px;
+    background-color: #000b;
+    border-radius: 5px;
+    color: white;
 }
 
 #imagem-quem-somos {
@@ -36,9 +50,3 @@ section#quem-somos-banner {
     }
 }
 
-
-@media only screen and (max-width:640) {
-    #imagem-quem-somos{
-        content: url("../img/quem-somos-mini.jpeg");
-    }
-}

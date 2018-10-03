@@ -4,31 +4,55 @@ section#contato-apresentacao>div.apresentacao {
     height: 200px;
 }
 
+input[type="text"], input[type="email"],input[type="number"],textarea{
+    border-color: rgb(148, 146, 146);
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 4px;
+    width: stretch;
+    margin: 5px;
+    padding: 5px;
+}
+
+input[type="text"], input[type="email"],input[type="number"]{
+    height: 25px;
+}
+
+button[type="submit"]{
+    padding: 7px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    background: #01b801;
+    margin-left:auto;
+    margin-right:auto;
+    width: 100px;
+}
+
+textarea{
+    height: 50px;
+}
+
 #subtitulo {
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-.form-group {
-    margin-bottom: 7px;
-}
-
-.form-group>input {
-    align-content: center;
-}
-
-#formulario-contato {
+#formulario-contato > form{
+    margin-top:10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
 }
 
-@media only screen and (max-width:640px) {
-    #formulario-contato {
-        flex-direction: row;
-    }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 @keyframes pulse-contato {

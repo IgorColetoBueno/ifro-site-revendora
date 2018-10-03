@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import toggleIcon from "../../assets/img/menu.svg";
 
 export interface IHeaderProps {
   title?: string;
@@ -35,12 +34,9 @@ export default class IHeader extends React.Component<
       <header>
         <div className="navbar-nav nav-flex-container">
           <div className="navbar-light">
-            <img
-              id="btn-toggle"
-              onClick={this.toggleNavbar}
-              src={toggleIcon}
-              alt="Ícone da barra de navegação"
-            />
+            <a id="btn-toggle" onClick={this.toggleNavbar}>
+              <i className="material-icons">menu</i>
+            </a>            
             <span className="navbar-title">
               <Link to="/" className="navbar-item">
                 {this.state.title}
@@ -60,11 +56,6 @@ export default class IHeader extends React.Component<
               <li>
                 <Link to="/QuemSomos" className="navbar-item">
                   Quem somos
-                </Link>
-              </li>
-              <li>
-                <Link to="/MeusProdutos" className="navbar-item">
-                  Meus Produtos
                 </Link>
               </li>
               <li>

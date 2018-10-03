@@ -1,6 +1,6 @@
 /* Section apresentacao */
 
-h1.big{
+h1.big {
     font-size: 80px;
 }
 
@@ -50,12 +50,21 @@ section#home-apresentacao>div.apresentacao {
 
 /* Início do carrossel */
 
-#section-home-carrossel{
+.section-home-carrossel {
     height: 100%;
-    background: url("../img/fundo-section-home.jpeg") center no-repeat;
+    width: 100%;
+}
+
+main > section.section-home-carrossel:nth-child(2) {
+    background: url("../img/fundo-section-home-1.jpeg") center no-repeat fixed;
+}
+
+main > section.section-home-carrossel:nth-child(3) {
+    background: url("../img/fundo-section-home-2.jpeg") center no-repeat fixed;
 }
 
 .carrossel-home {
+    padding: 8px;
     margin-left: auto;
     margin-right: auto;
     width: 640px;
@@ -64,12 +73,18 @@ section#home-apresentacao>div.apresentacao {
     overflow: hidden;
 }
 
-.carrossel-home-titulo>h2{
-    text-shadow: 2px 0px 5px rgb(230, 226, 226);
+.carrossel-home-titulo>h2 {
+    padding: 5px;
+    background-color: #000b;
+    border-radius: 5px;
+    color: white;
 }
 
 .paragrafo-descricao {
-    text-shadow: 1px 1px 3px #fff;
+    background-color: #000b;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
     margin: 10px auto;
     text-align: justify;
     width: 640px;
@@ -81,7 +96,7 @@ section#home-apresentacao>div.apresentacao {
 }
 
 .carrossel-home-item {
-    box-shadow: 3px 1px 2px #000;
+    border:3;
     position: absolute;
     opacity: 0;
     animation-name: animacao;
@@ -100,15 +115,15 @@ section#home-apresentacao>div.apresentacao {
     }
 }
 
-.carrossel-home-item:nth-child(2) {
+.carrossel-home-item:nth-child(3) {
     animation-delay: 5s;
 }
 
-.carrossel-home-item:nth-child(3) {
+.carrossel-home-item:nth-child(4) {
     animation-delay: 10s;
 }
 
-.carrossel-home-item:nth-child(4) {
+.carrossel-home-item:nth-child(5) {
     animation-delay: 15s;
 }
 
@@ -124,25 +139,6 @@ section#home-apresentacao>div.apresentacao {
 
     #titulo-apresentacao {
         font-size: 65px;
-    }
-
-    .carrossel-home-item:nth-child(1) {
-        content: url("../img/carrossel-home-1-mini.jpeg");
-    }
-
-    .carrossel-home-item:nth-child(2) {
-        content: url("../img/carrossel-home-2-mini.jpeg");
-        animation-delay: 5s;
-    }
-
-    .carrossel-home-item:nth-child(3) {
-        content: url("../img/carrossel-home-3-mini.jpeg");
-        animation-delay: 10s;
-    }
-
-    .carrossel-home-item:nth-child(4) {
-        content: url("../img/carrossel-home-4-mini.jpeg");
-        animation-delay: 15s;
     }
 
     .carrossel-home {
