@@ -2,6 +2,18 @@
     display: flex;
 }
 
+.flex-container-wrap{
+    flex-wrap: wrap
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
 .flex-d-row{
     flex-direction: row
 }

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Roboto|Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Charmonman:700');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,5 +54,6 @@ ul{
 @import './contato.css';
 @import './footer.css';
 @import './template/layout.css';
+@import './template/table.css';
 @import './template/navbar.css';
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');

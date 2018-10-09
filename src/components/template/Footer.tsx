@@ -6,10 +6,31 @@ import logoTwitter from "../../assets/img/twitter-logo.svg";
 export default class Footer extends React.Component<{}> {
   public render() {
     return (
-      <footer id="nav-footer">
+      <footer
+        className="flex-container flex-container-wrap space-around light"
+        id="nav-footer"
+      >
+        <div>
+          <ul id="lista-contatos">
+            <li>
+              <i className="material-icons">phone</i>
+              Telefone 1: (69) 98132-8015
+            </li>
+            <li>
+              <i className="material-icons">phone</i>
+              Telefone 2: (69) 98422-5615
+            </li>
+            <li><i className="material-icons">mail</i>E-mail: igor.mcbueno@gmail.com</li>
+          </ul>
+        </div>
+        <div>
+          <ul id="lista-contatos">
+            <li><i className="material-icons">home</i>End: Rua São Luiz | 474 | 5º BEC</li>
+          </ul>
+        </div>
         <nav id="nav-social">
-          <ul className="flex-container flex-d-row">
-            <li id="siga-nos">Siga-nos nas redes sociais :p</li>
+          <ul className="flex-container flex-container-wrap flex-d-row">
+            <li id="siga-nos">Siga-nos:</li>
             <li>
               <a>
                 <img

@@ -1,26 +1,48 @@
-
-
-.footer-icon-light{
+.footer-icon-light {
     background: whitesmoke;
     margin-left: 5px;
     margin-right: 5px;
-    border-radius: 6px; 
+    border-radius: 6px;
 }
 
-.footer-icon-dark{
+.footer-icon-dark {
     background: black;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 6px;
 }
 
-#nav-footer{
-    background: linear-gradient(to top, #000000f8, black, #000000f8) ;
-    width: 100%;
-    bottom: 0;
-    height: 60px;    
+.light {
+    color: white;
 }
 
-#nav-social{
+#nav-footer {
+    background: linear-gradient(to top, #000000f8, black, #000000f8);
+    width: 100%;
+    bottom: 0;
     padding-top: 12px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+#endereco-footer {
+    padding: 15px;
+}
+
+#lista-contatos>li {
+    margin: 5px;
+}
+
+.borda-footer {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white 6px solid;
+    border-radius: 5px;
+}
+
+.material-icons{
+    vertical-align: middle;
+    margin-right: 5px;
 }

@@ -2,6 +2,7 @@
 
 h1.big {
     font-size: 80px;
+    font-family: 'Charmonman', cursive
 }
 
 section#home-apresentacao>div.apresentacao {
@@ -15,11 +16,11 @@ section#home-apresentacao>div.apresentacao {
         background-color: #a52a2a;
     }
 
-    25% {
+    15% {
         background-color: #db039a;
     }
 
-    75% {
+    30% {
         background-color: #ff6600;
     }
 
@@ -51,16 +52,46 @@ section#home-apresentacao>div.apresentacao {
 /* Início do carrossel */
 
 .section-home-carrossel {
+    padding-top: 12px;
     height: 100%;
     width: 100%;
 }
 
-main > section.section-home-carrossel:nth-child(2) {
+#section-tabela {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    height: 350px;
+    width: 100%;
+}
+
+#section-tabela>div>table {
+    padding: 5px;
+    background: #000b;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    padding-top: 12px;
+    width: 100%;
+}
+
+tr:hover,
+td:hover {
+    background: transparent;
+    color: rgb(236, 122, 236);
+    text-shadow: 1px 1px 1px black; 
+}
+
+main>section.section-home-carrossel:nth-child(2) {
     background: url("../img/fundo-section-home-1.jpeg") center no-repeat fixed;
 }
 
-main > section.section-home-carrossel:nth-child(3) {
+main>section.section-home-carrossel:nth-child(3) {
     background: url("../img/fundo-section-home-2.jpeg") center no-repeat fixed;
+}
+
+main>section#section-tabela {
+    background: url("../img/fundo-section-home-1.jpeg") center no-repeat fixed;
 }
 
 .carrossel-home {
@@ -71,6 +102,10 @@ main > section.section-home-carrossel:nth-child(3) {
     height: 420px;
     position: relative;
     overflow: hidden;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #000000d3;
+    border-radius: 7px;
 }
 
 .carrossel-home-titulo>h2 {
@@ -96,9 +131,10 @@ main > section.section-home-carrossel:nth-child(3) {
 }
 
 .carrossel-home-item {
-    border:3;
     position: absolute;
     opacity: 0;
+    top: 0;
+    height: 100%;
     animation-name: animacao;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -130,7 +166,7 @@ main > section.section-home-carrossel:nth-child(3) {
 /* Alterando para estrutura mobile */
 @media only screen and (max-width: 600px) {
     section#home-apresentacao>div.apresentacao {
-        height: 500px;
+        height: fit-content;
     }
 
     .apresentacao {
@@ -147,5 +183,10 @@ main > section.section-home-carrossel:nth-child(3) {
 
     .paragrafo-descricao {
         width: 320px;
+    }
+
+
+    #section-tabela {
+        height: 450px;
     }
 }

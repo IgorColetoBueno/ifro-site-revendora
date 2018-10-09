@@ -8,7 +8,7 @@
 section#quem-somos-apresentacao>div.apresentacao {
     animation: pulse-sobre-nos 8s infinite;
     width: 100%;
-    height: 200px;
+    height: fit-content;
 }
 
 section#quem-somos-banner {

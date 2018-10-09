@@ -28,9 +28,6 @@ export default class Home extends React.Component<{}> {
           </section>
           <section id="section-1" className="section-home-carrossel">
             <div className="carrossel-home">
-              <div className="carrossel-home-titulo">
-                <h2>Qual é a importância da beleza?</h2>
-              </div>
               <img
                 className="carrossel-home-item"
                 src={carrosselItem1}
@@ -62,9 +59,6 @@ export default class Home extends React.Component<{}> {
           </section>
           <section className="section-home-carrossel">
             <div className="carrossel-home">
-              <div className="carrossel-home-titulo">
-                <h2>Quem são essas pessoas belas?</h2>
-              </div>
               <img
                 className="carrossel-home-item"
                 src={carrosselPeople1}
@@ -88,8 +82,51 @@ export default class Home extends React.Component<{}> {
             </div>
             <div className="paragrafo-descricao">
               <p>
-                São pessoas normais, assim como você. A semelhança entre elas está no otimisto e leveza ao verem o mundo!
+                São pessoas normais, assim como você. A semelhança entre elas
+                está no otimisto e leveza ao verem o mundo!
               </p>
+            </div>
+          </section>
+          <section id="section-tabela">
+            <div>
+              <div className="paragrafo-descricao">
+                <p>
+                  São pessoas normais, assim como você. A semelhança entre elas
+                  está no otimisto e leveza ao verem o mundo!
+                </p>
+              </div>
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th>Produto</th>
+                    <th>Detalhes</th>
+                    <th>Preço (R$)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Batom vermelho</td>
+                    <td>Melhor amigo da mulher brasileira</td>
+                    <td>R$ 25,00</td>
+                  </tr>
+                  <tr>
+                    <td>Rímel escuro</td>
+                    <td>Seu companheiro nas horas difíceis</td>
+                    <td>R$ 50,00</td>
+                  </tr>
+                  <tr>
+                    <td>Blush</td>
+                    <td>Para arrebatar seu visual</td>
+                    <td>R$ 60,00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div className="paragrafo-descricao">
+                <p>
+                  São pessoas normais, assim como você. A semelhança entre elas
+                  está no otimisto e leveza ao verem o mundo!
+                </p>
+              </div>
             </div>
           </section>
         </main>

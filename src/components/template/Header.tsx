@@ -39,7 +39,9 @@ export default class IHeader extends React.Component<
             </a>            
             <span className="navbar-title">
               <Link to="/" className="navbar-item">
-                {this.state.title}
+              <i className="material-icons">
+              local_atm
+              </i>{this.state.title}
               </Link>
             </span>
           </div>
