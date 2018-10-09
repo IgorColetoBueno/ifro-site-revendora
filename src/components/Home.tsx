@@ -89,11 +89,8 @@ export default class Home extends React.Component<{}> {
           </section>
           <section id="section-tabela">
             <div>
-              <div className="paragrafo-descricao">
-                <p>
-                  São pessoas normais, assim como você. A semelhança entre elas
-                  está no otimisto e leveza ao verem o mundo!
-                </p>
+              <div className="paragrafo-descricao ta-center">
+                <p>Quais são nossos melhores produtos?</p>
               </div>
               <table className="table">
                 <thead>
@@ -123,8 +120,7 @@ export default class Home extends React.Component<{}> {
               </table>
               <div className="paragrafo-descricao">
                 <p>
-                  São pessoas normais, assim como você. A semelhança entre elas
-                  está no otimisto e leveza ao verem o mundo!
+                  São nossas peças queridas, perfeitas para você e sua beleza!
                 </p>
               </div>
             </div>
