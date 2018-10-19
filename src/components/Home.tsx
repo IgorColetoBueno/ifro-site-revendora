@@ -18,7 +18,7 @@ export default class Home extends React.Component<{}> {
     return (
       <div>
         <Header />
-        <main>
+        <main className="limit-box box-centered">
           <section id="home-apresentacao" className="section-apresentacao">
             <div className="apresentacao">
               <span className="titulo-apresentacao">

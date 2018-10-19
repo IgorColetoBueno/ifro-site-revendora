@@ -32,16 +32,15 @@ export default class IHeader extends React.Component<
   public render() {
     return (
       <header>
-        <div className="navbar-nav nav-flex-container">
+        <div className="navbar-nav nav-flex-container limit-box box-centered">
           <div className="navbar-light">
             <a id="btn-toggle" onClick={this.toggleNavbar}>
               <i className="material-icons">menu</i>
-            </a>            
+            </a>
             <span className="navbar-title">
               <Link to="/" className="navbar-item">
-              <i className="material-icons">
-              local_atm
-              </i>{this.state.title}
+                <i className="material-icons">local_atm</i>
+                {this.state.title}
               </Link>
             </span>
           </div>

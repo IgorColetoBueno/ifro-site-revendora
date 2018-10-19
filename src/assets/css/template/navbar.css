@@ -1,6 +1,9 @@
+header{
+    background: #9b1827;
+}
+
 .navbar-nav {
     padding: 7px;
-    background: #9b1827;
 }
 
 .nav-flex-container {

@@ -25,3 +25,19 @@
 .ta-center{
     text-align: center;
 }
+
+.limit-box{
+    max-width: 1366px;
+}
+
+.box-centered{
+    margin: 0 auto;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    height: 100vh;
+}

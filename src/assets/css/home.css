@@ -83,15 +83,15 @@ td:hover {
 }
 
 main>section.section-home-carrossel:nth-child(2) {
-    background: url("../img/fundo-section-home-1.jpeg") center no-repeat fixed;
+    background: url("../img/fundo-section-home-1.jpeg") center no-repeat;
 }
 
 main>section.section-home-carrossel:nth-child(3) {
-    background: url("../img/fundo-section-home-2.jpeg") center no-repeat fixed;
+    background: url("../img/fundo-section-home-2.jpeg") center no-repeat;
 }
 
 main>section#section-tabela {
-    background: url("../img/fundo-section-home-1.jpeg") center no-repeat fixed;
+    background: url("../img/fundo-section-home-1.jpeg") center no-repeat;
 }
 
 .carrossel-home {
