@@ -1,6 +1,9 @@
 # Site de revendedoras
 Site de revendedoras para avaliação de Programação Web (este site foi criado sem ter uma empresa concreta como referência).
 
+#Link do Github
+https://github.com/IgorColetoBueno/ifro-site-revendora
+
 #Como executar o projeto
 Para executar, basta rodar os seguintes comandos no diretório do projeto: "npm i" e "npm start", respectivamente.
 
