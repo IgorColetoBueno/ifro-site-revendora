@@ -20,7 +20,9 @@ export default class QuemSomos extends React.Component<{}> {
             </div>
           </section>
           <section id="quem-somos-banner">
-            <h2>Minha revendedora</h2>
+            <div id="subtitulo-container">
+              <h2>Minha revendedora</h2>
+            </div>
             <div id="imagem-quem-somos">
               <img
                 src={imgQuemSomos}
